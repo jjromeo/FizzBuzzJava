@@ -13,4 +13,8 @@ public class FizzBuzz {
 		return Integer.toString	(i);
 	}
 
+	public static void main(String[] args) {
+		FizzBuzz fizzbuzzer = new FizzBuzz();
+		System.out.println(fizzbuzzer.fizzBuzz(Integer.parseInt(args[0])));
+	}
 }
