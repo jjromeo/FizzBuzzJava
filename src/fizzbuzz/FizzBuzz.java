@@ -1,23 +1,15 @@
 package fizzbuzz;
 
 public class FizzBuzz {
-
-	public Boolean isDivisibleByThree(int i) {
-		return i % 3 == 0;
-	}
-
-	public Boolean isDivisibleByFive(int i) {
-		return i % 5 == 0;
-	}
-
-	public Boolean isDivisibleByFifteen(int i) {
-		return i % 15 == 0;
+	
+	public Boolean isDivisibleBy(int divisor, int number) {
+		return number % divisor == 0;
 	}
 
 	public String fizzBuzz(int i) {
-		if (this.isDivisibleByFifteen(i)) return "FizzBuzz";
-		if (this.isDivisibleByThree(i)) return "Fizz";
-		if (this.isDivisibleByFive(i)) return "Buzz";
+		if (this.isDivisibleBy(15, i)) return "FizzBuzz";
+		if (this.isDivisibleBy(5, i)) return "Buzz";
+		if (this.isDivisibleBy(3, i)) return "Fizz";
 		return Integer.toString	(i);
 	}
 

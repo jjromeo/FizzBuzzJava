@@ -9,42 +9,42 @@ public class fizzBuzzTest {
 	@Test
 	public void itKnowsThreeIsDivisibleByThree() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByThree(3);
+		Boolean output = test.isDivisibleBy(3, 3);
 		assertEquals(true, output);
 	}
 	
 	@Test
 	public void itKnowsOneIsNotDivisibleByThree() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByThree(1);
+		Boolean output = test.isDivisibleBy(3, 1);
 		assertEquals(false, output);
 	}
 	
 	@Test
 	public void itKnowsFiveIsDivisibleByFive() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByFive(5);
+		Boolean output = test.isDivisibleBy(5, 5);
 		assertEquals(true, output);
 	}
 	
 	@Test
 	public void itKnowsOneIsNotDivisibleByFive() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByFive(1);
+		Boolean output = test.isDivisibleBy(5, 1);
 		assertEquals(false, output);
 	}
 	
 	@Test
 	public void itKnowsFifteenIsDivisibleByFifteen() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByFifteen(15);
+		Boolean output = test.isDivisibleBy(15, 15);
 		assertEquals(true, output);
 	}
 	
 	@Test
 	public void itKnowsOneIsNotDivisibleByFifteen() {
 		FizzBuzz test = new FizzBuzz();
-		Boolean output = test.isDivisibleByFifteen(1);
+		Boolean output = test.isDivisibleBy(15, 1);
 		assertEquals(false, output);
 	}
 	
